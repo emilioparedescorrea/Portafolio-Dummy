@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ✏️ CAMBIAR: título de la página y descripción meta -->
+  <title>Valentina Ruiz — Diseñadora</title>
+  <meta name="description" content="Portafolio de Valentina Ruiz, diseñadora gráfica y de experiencias." />
+
+  <!-- Google Fonts: DM Serif Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVEGACIÓN
+  ════════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <!-- ✏️ CAMBIAR: tus iniciales o nombre corto -->
+      VR
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════
+         HERO
+    ════════════════════════════════════════════ -->
+    <section class="hero" id="inicio">
+      <div class="hero__eyebrow">
+        <!-- ✏️ CAMBIAR: especialidad/rol -->
+        Diseño Gráfico &amp; UX/UI
+      </div>
+
+      <h1 class="hero__name">
+        <!-- ✏️ CAMBIAR: tu nombre completo -->
+        Valentina<br /><em>Ruiz</em>
+      </h1>
+
+      <p class="hero__tagline">
+        <!-- ✏️ CAMBIAR: tu frase personal -->
+        Creo piezas que comunican<br />antes de que las leas.
+      </p>
+
+      <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+
+      <!-- Elemento decorativo tipográfico -->
+      <div class="hero__deco" aria-hidden="true">DISEÑO</div>
+
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span>scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+
+      <!-- ✏️ CAMBIAR: reemplaza este div por una etiqueta <img> con tu foto
+           Ejemplo: <img src="assets/foto-perfil.jpg" alt="Valentina Ruiz" class="hero__photo" />
+      -->
+      <div class="hero__photo hero__photo--placeholder" aria-hidden="true">
+        <span>Tu foto aquí</span>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         SOBRE MÍ
+    ════════════════════════════════════════════ -->
+    <section class="about" id="sobre-mi">
+      <div class="about__inner container">
+
+        <div class="about__text reveal">
+          <p class="section-label">— Sobre mí</p>
+          <h2 class="about__heading">
+            <!-- ✏️ CAMBIAR: titular de presentación -->
+            Diseñadora con foco<br />en lo esencial.
+          </h2>
+          <p class="about__body">
+            <!-- ✏️ CAMBIAR: tu bio personal (3-5 oraciones) -->
+            Soy estudiante de Diseño Gráfico en la Universidad de las Artes,
+            apasionada por construir identidades visuales que cuenten historias
+            reales. Me muevo entre el branding, la ilustración editorial y el
+            diseño de experiencias digitales.
+          </p>
+          <p class="about__body">
+            <!-- ✏️ CAMBIAR: segundo párrafo bio -->
+            Creo que el buen diseño es invisible cuando funciona y
+            extraordinario cuando se necesita. Busco ese equilibrio
+            en cada proyecto.
+          </p>
+
+          <ul class="about__facts">
+            <!-- ✏️ CAMBIAR: datos rápidos -->
+            <li><strong>Universidad:</strong> Universidad de las Artes</li>
+            <li><strong>Año:</strong> 4.° semestre</li>
+            <li><strong>Disponible para:</strong> Prácticas y freelance</li>
+          </ul>
+        </div>
+
+        <div class="about__visual reveal reveal--right">
+          <!-- ✏️ CAMBIAR: reemplaza este div por una imagen tuya o de trabajo
+               Ejemplo: <img src="assets/sobre-mi.jpg" alt="Valentina en su estudio" />
+          -->
+          <div class="about__img-placeholder">
+            <span>Imagen / foto de estudio</span>
+          </div>
+          <div class="about__accent-box">
+            <!-- ✏️ CAMBIAR: año de inicio o dato memorable -->
+            <span class="accent-number">2021</span>
+            <span class="accent-label">Empezando a diseñar el mundo</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         PROYECTOS
+    ════════════════════════════════════════════ -->
+    <section class="projects" id="proyectos">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">— Proyectos seleccionados</p>
+          <h2 class="section-title">Trabajo reciente</h2>
+        </div>
+
+        <div class="projects__grid">
+
+          <!-- ── TARJETA 1 ── -->
+          <article class="card card--featured reveal">
+            <!-- ✏️ CAMBIAR: imagen del proyecto
+                 Ejemplo: <img src="assets/proyecto-1.jpg" alt="Identidad Café Nómada" class="card__img" />
+            -->
+            <div class="card__img card__img--placeholder">
+              <span>Imagen proyecto 1</span>
+            </div>
+            <div class="card__body">
+              <span class="card__tag">
+                <!-- ✏️ CAMBIAR: categoría -->
+                Branding
+              </span>
+              <h3 class="card__title">
+                <!-- ✏️ CAMBIAR: nombre del proyecto -->
+                Identidad Café Nómada
+              </h3>
+              <p class="card__desc">
+                <!-- ✏️ CAMBIAR: descripción breve -->
+                Sistema de identidad visual para una cadena de cafeterías
+                nómadas con énfasis en lo artesanal y lo local.
+              </p>
+              <!-- ✏️ CAMBIAR: link al proyecto (Behance, PDF, etc.) -->
+              <a href="#" class="card__link" target="_blank" rel="noopener">Ver proyecto →</a>
+            </div>
+          </article>
+
+          <!-- ── TARJETA 2 ── -->
+          <article class="card reveal">
+            <div class="card__img card__img--placeholder">
+              <span>Imagen proyecto 2</span>
+            </div>
+            <div class="card__body">
+              <span class="card__tag">UX/UI</span>
+              <h3 class="card__title">
+                <!-- ✏️ CAMBIAR -->
+                App de lectura Lectio
+              </h3>
+              <p class="card__desc">
+                <!-- ✏️ CAMBIAR -->
+                Diseño de experiencia y prototipo de alta fidelidad para
+                una app de lectura social.
+              </p>
+              <a href="#" class="card__link" target="_blank" rel="noopener">Ver proyecto →</a>
+            </div>
+          </article>
+
+          <!-- ── TARJETA 3 ── -->
+          <article class="card reveal">
+            <div class="card__img card__img--placeholder">
+              <span>Imagen proyecto 3</span>
+            </div>
+            <div class="card__body">
+              <span class="card__tag">Editorial</span>
+              <h3 class="card__title">
+                <!-- ✏️ CAMBIAR -->
+                Revista Umbral N.°3
+              </h3>
+              <p class="card__desc">
+                <!-- ✏️ CAMBIAR -->
+                Dirección de arte y maquetación del tercer número de la
+                revista de cultura independiente Umbral.
+              </p>
+              <a href="#" class="card__link" target="_blank" rel="noopener">Ver proyecto →</a>
+            </div>
+          </article>
+
+          <!-- ── TARJETA 4 ── -->
+          <article class="card reveal">
+            <div class="card__img card__img--placeholder">
+              <span>Imagen proyecto 4</span>
+            </div>
+            <div class="card__body">
+              <span class="card__tag">Ilustración</span>
+              <h3 class="card__title">
+                <!-- ✏️ CAMBIAR -->
+                Serie «Raíces»
+              </h3>
+              <p class="card__desc">
+                <!-- ✏️ CAMBIAR -->
+                Serie de ilustraciones botánicas latinoamericanas publicadas
+                en formato poster y digital.
+              </p>
+              <a href="#" class="card__link" target="_blank" rel="noopener">Ver proyecto →</a>
+            </div>
+          </article>
+
+          <!-- ── TARJETA 5 ── -->
+          <article class="card reveal">
+            <div class="card__img card__img--placeholder">
+              <span>Imagen proyecto 5</span>
+            </div>
+            <div class="card__body">
+              <span class="card__tag">Packaging</span>
+              <h3 class="card__title">
+                <!-- ✏️ CAMBIAR -->
+                Packaging Yerba Pampa
+              </h3>
+              <p class="card__desc">
+                <!-- ✏️ CAMBIAR -->
+                Rediseño de packaging para una marca de yerba artesanal,
+                con foco en materiales sustentables.
+              </p>
+              <a href="#" class="card__link" target="_blank" rel="noopener">Ver proyecto →</a>
+            </div>
+          </article>
+
+        </div><!-- /projects__grid -->
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         HABILIDADES
+    ════════════════════════════════════════════ -->
+    <section class="skills" id="habilidades">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">— Disciplinas</p>
+          <h2 class="section-title">Habilidades</h2>
+        </div>
+
+        <div class="skills__layout">
+
+          <div class="skills__list reveal">
+            <!-- ✏️ CAMBIAR: ajusta porcentajes y nombres de habilidades -->
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span class="skill-item__name">Branding &amp; Identidad</span>
+                <span class="skill-item__pct">90%</span>
+              </div>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-pct="90"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span class="skill-item__name">UX/UI Design</span>
+                <span class="skill-item__pct">80%</span>
+              </div>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-pct="80"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span class="skill-item__name">Ilustración editorial</span>
+                <span class="skill-item__pct">85%</span>
+              </div>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-pct="85"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span class="skill-item__name">Diseño editorial</span>
+                <span class="skill-item__pct">75%</span>
+              </div>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-pct="75"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span class="skill-item__name">Tipografía</span>
+                <span class="skill-item__pct">88%</span>
+              </div>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-pct="88"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span class="skill-item__name">Motion &amp; Animación</span>
+                <span class="skill-item__pct">60%</span>
+              </div>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-pct="60"></div></div>
+            </div>
+          </div><!-- /skills__list -->
+
+          <div class="skills__tools reveal reveal--right">
+            <p class="skills__tools-title">Herramientas</p>
+            <ul class="tools-grid">
+              <!-- ✏️ CAMBIAR: agrega o quita las herramientas que uses -->
+              <li>Figma</li>
+              <li>Adobe Illustrator</li>
+              <li>Photoshop</li>
+              <li>InDesign</li>
+              <li>After Effects</li>
+              <li>Procreate</li>
+              <li>Notion</li>
+              <li>Framer</li>
+            </ul>
+
+            <div class="skills__quote">
+              <!-- ✏️ CAMBIAR: frase tuya o que te inspire -->
+              "El diseño es inteligencia<br />hecha visible."
+              <cite>— Alina Wheeler</cite>
+            </div>
+          </div>
+
+        </div><!-- /skills__layout -->
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         CONTACTO
+    ════════════════════════════════════════════ -->
+    <section class="contact" id="contacto">
+      <div class="container">
+        <div class="contact__inner reveal">
+          <p class="section-label">— Hablemos</p>
+          <h2 class="contact__heading">
+            <!-- ✏️ CAMBIAR: CTA de contacto -->
+            ¿Tienes un proyecto<br /><em>en mente?</em>
+          </h2>
+          <p class="contact__sub">
+            <!-- ✏️ CAMBIAR: texto de invitación -->
+            Estoy disponible para prácticas, proyectos freelance y
+            colaboraciones creativas. Escríbeme, me encantaría escucharte.
+          </p>
+
+          <div class="contact__links">
+            <!-- ✏️ CAMBIAR: tu correo real -->
+            <a href="mailto:hola@valentinaruiz.com" class="btn btn--primary">
+              hola@valentinaruiz.com
+            </a>
+
+            <div class="contact__socials">
+              <!-- ✏️ CAMBIAR: tus links reales de redes sociales -->
+              <a href="https://behance.net/" target="_blank" rel="noopener" aria-label="Behance">Behance</a>
+              <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__deco" aria-hidden="true">✦</div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>
+        <!-- ✏️ CAMBIAR: tu nombre -->
+        © 2025 Valentina Ruiz
+      </span>
+      <span class="footer__craft">Diseñado &amp; construido con intención.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CAMBIAR: título que aparecerá en la pestaña del navegador -->
+  <title>Portafolio | Martina Diseño</title>
+
+  <!-- CAMBIAR: breve descripción para buscadores y vista previa al compartir -->
+  <meta name="description" content="Portafolio de diseño gráfico, branding, ilustración y UX/UI." />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <!-- CAMBIAR: iniciales o logo personal -->
+      <a href="#inicio" class="brand" aria-label="Ir al inicio">MD</a>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO PRINCIPAL -->
+    <section id="inicio" class="hero section">
+      <div class="hero-content">
+        <p class="eyebrow">Portafolio de diseño</p>
+
+        <!-- CAMBIAR: nombre de la estudiante -->
+        <h1>Martina Díaz</h1>
+
+        <!-- CAMBIAR: especialidad principal -->
+        <h2>Diseñadora gráfica enfocada en branding, ilustración y experiencias digitales.</h2>
+
+        <!-- CAMBIAR: frase breve de presentación -->
+        <p class="hero-text">
+          Creo identidades visuales con intención, sensibilidad y claridad para marcas que quieren conectar mejor con las personas.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+
+          <!-- CAMBIAR: link a CV, Behance, Drive o PDF -->
+          <a href="https://www.behance.net/" target="_blank" rel="noopener" class="btn btn-secondary">Behance</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Imagen decorativa del portafolio">
+        <!-- CAMBIAR: reemplazar assets/hero-placeholder.svg por una foto, collage o mockup personal -->
+        <img src="assets/hero-placeholder.svg" alt="Collage visual de trabajos de diseño" />
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="section about">
+      <div class="section-heading">
+        <p class="eyebrow">Sobre mí</p>
+        <h2>Diseño con estrategia, sensibilidad visual y atención al detalle.</h2>
+      </div>
+
+      <div class="about-grid">
+        <p>
+          <!-- CAMBIAR: texto biográfico real -->
+          Soy estudiante de diseño con interés en construir soluciones visuales que mezclen creatividad, funcionalidad y narrativa. Me gusta trabajar desde la investigación, explorar referencias y convertir ideas en piezas claras, memorables y coherentes.
+        </p>
+
+        <p>
+          <!-- CAMBIAR: intereses, enfoque o personalidad profesional -->
+          Actualmente desarrollo proyectos de identidad visual, ilustración, diseño editorial y prototipos UX/UI. Busco seguir aprendiendo, colaborar con equipos creativos y crear propuestas que tengan impacto visual y propósito.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section projects">
+      <div class="section-heading">
+        <p class="eyebrow">Proyectos</p>
+        <h2>Selección de trabajos recientes</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <!-- CAMBIAR: imagen del proyecto -->
+          <img src="assets/project-branding.svg" alt="Proyecto de identidad visual Aurora" />
+
+          <div class="project-info">
+            <!-- CAMBIAR: categoría, nombre y descripción -->
+            <span>Branding</span>
+            <h3>Identidad Aurora</h3>
+            <p>Sistema visual para una marca de bienestar: logo, paleta cromática, piezas gráficas y aplicaciones digitales.</p>
+
+            <!-- CAMBIAR: link al proyecto, Behance, Drive o página individual -->
+            <a href="#" aria-label="Ver proyecto Identidad Aurora">Ver proyecto</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <!-- CAMBIAR: imagen del proyecto -->
+          <img src="assets/project-illustration.svg" alt="Proyecto de ilustración editorial Botánica" />
+
+          <div class="project-info">
+            <span>Ilustración</span>
+            <h3>Botánica Editorial</h3>
+            <p>Serie de ilustraciones inspiradas en naturaleza, texturas orgánicas y composición editorial contemporánea.</p>
+
+            <!-- CAMBIAR: link al proyecto -->
+            <a href="#" aria-label="Ver proyecto Botánica Editorial">Ver proyecto</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <!-- CAMBIAR: imagen del proyecto -->
+          <img src="assets/project-ui.svg" alt="Proyecto UX UI aplicación Nómada" />
+
+          <div class="project-info">
+            <span>UX/UI</span>
+            <h3>App Nómada</h3>
+            <p>Prototipo mobile para descubrir espacios culturales, con foco en navegación simple y experiencia visual cálida.</p>
+
+            <!-- CAMBIAR: link al proyecto -->
+            <a href="#" aria-label="Ver proyecto App Nómada">Ver proyecto</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="section skills">
+      <div class="section-heading">
+        <p class="eyebrow">Habilidades</p>
+        <h2>Áreas de trabajo</h2>
+      </div>
+
+      <div class="skills-list">
+        <!-- CAMBIAR: agregar, quitar o editar habilidades según corresponda -->
+        <span>Branding</span>
+        <span>Identidad visual</span>
+        <span>Ilustración</span>
+        <span>UX/UI</span>
+        <span>Diseño editorial</span>
+        <span>Packaging</span>
+        <span>Dirección de arte</span>
+        <span>Fotomontaje</span>
+        <span>Figma</span>
+        <span>Adobe Illustrator</span>
+        <span>Adobe Photoshop</span>
+        <span>Adobe InDesign</span>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section contact">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">Contacto</p>
+          <h2>¿Trabajamos juntos?</h2>
+
+          <!-- CAMBIAR: mensaje de contacto -->
+          <p>
+            Estoy abierta a colaboraciones, prácticas profesionales y nuevos desafíos creativos.
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <!-- CAMBIAR: correo real -->
+          <a href="mailto:martina.diseno@email.com">martina.diseno@email.com</a>
+
+          <!-- CAMBIAR: links reales -->
+          <a href="https://www.behance.net/" target="_blank" rel="noopener">Behance</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <!-- CAMBIAR: nombre y año si quieres -->
+    <p>© <span id="currentYear"></span> Martina Díaz. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
