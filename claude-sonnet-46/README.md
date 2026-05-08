@@ -1,7 +1,7 @@
 # Portafolio — Guía de personalización
 
 ## Estructura de archivos
-
+      
 ```
 portfolio/
 ├── index.html          ← Contenido y estructura
